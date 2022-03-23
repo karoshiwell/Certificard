@@ -1,0 +1,214 @@
+/*--------------------------------- IMPORTS ------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Strait&display=swap");
+/*"Strait", sans-serif;*/
+/*------------------------------------- GLOBAL ---------------------------------*/
+
+* {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right, #124c57, #072227);
+    font-family: 'Alumni Sans', sans-serif;
+    
+}
+
+
+
+/*------------------------------------- CLASS ---------------------------------*/
+
+.container {
+    background-color: rgb(224, 220, 214);
+    box-shadow: 2px 2px 20px #4FBDBA, 1px 1px 10px black, 3px 3px 15px black;
+    
+
+    margin: 20px 230px 100px 230px;
+    padding: 20px 20px;
+
+    border-style: inset;
+    border-bottom-width: 7px;
+    border-top-width: 0;
+    border-right-width: 7px;
+    border-left-width: 0;
+    border-radius: 30px;
+    border-color: #4FBDBA;
+}
+
+#img-perfil {
+    max-height: 200px;
+    margin: 0 20px;
+
+    border-radius: 100%;
+    
+    box-shadow:  black 1px 1px 10px;
+
+    transition: 0.4s;
+}
+
+#img-perfil:hover {
+    transform: scale(0.95);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+.info-perfil {
+    color: black;
+    font-size: 18px;
+    text-shadow: rgb(206, 206, 206) 1px 1px;
+}
+.info-perfil h1 {
+    margin: 0 0;
+}
+.info-perfil h3 {
+    font-size: 26px;
+    text-shadow: #072227 1px 1px 2px;
+    color: #3d9693;
+    margin: 0 0 30px 0;
+}
+
+.redes img {
+
+    width: 30px;
+
+    margin: 15px 5px 0 5px;
+    padding: 10 10;
+    
+    transition: 0.4s;
+}
+.redes :hover{
+    transform: scale(1.15);
+}
+
+.tema {
+    display: flex;
+    align-self:flex-end;
+}
+.tema button {
+    font-size: 50px;
+
+    background-image: url("https://i.postimg.cc/1z7CBW5W/moon.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border: none;
+    cursor: pointer;
+    transition: 1000ms
+}
+.tema button:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.30);
+    transition: 100ms
+    
+}
+
+.projetos {
+    list-style: inside;
+
+    color: rgb(46, 46, 46);
+    text-shadow: rgb(44, 44, 44) 0.4px 0.4px;
+    display: flex;
+    flex-direction: column;
+    font-family:'Alumni Sans', sans-serif; 
+    font-size: 30px;
+    text-align: left;
+    
+    background-image: linear-gradient(to left, #b9b9b9, rgb(187, 187, 187));
+
+    min-height: 400px;
+
+    padding: 10px 30px;
+    margin: 0 15px 10px 15px;
+
+    border-radius: 30px;
+}
+
+.projetos ul {
+    text-shadow: rgb(90, 90, 90) 1px 1px;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+
+    margin: 30px 0 50px 0;
+}
+
+.projetos li {
+    display: flex;
+    flex-direction:column-reverse;
+    margin: 4px 0;
+
+    transition: 0.4s;
+}
+
+.projetos li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.projetos li:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    
+}
+
+
+
+.dark {
+    background-image: linear-gradient(to right, #081f24, #011f24);
+}
+
+.dark .container {
+    background-color: rgb(56, 56, 56);
+    box-shadow: 2px 2px 20px #214b49, 1px 1px 10px black, 3px 3px 15px black;
+
+    border-style: inset;
+    border-bottom-width: 7px;
+    border-top-width: 0;
+    border-right-width: 7px;
+    border-left-width: 0;
+    border-radius: 30px;
+    border-color: #204948;
+}
+
+.dark #img-perfil {
+    box-shadow: 2px 2px 10px #424242, 1px 1px 10px black, 3px 3px 15px black; 
+}
+
+.dark .info-perfil {
+    color: rgb(233, 233, 233);
+    text-shadow: rgb(78, 78, 78) 1px 1px;
+}
+
+.dark .redes img {
+    width: 35px;
+  
+}
+
+.dark .projetos {
+    background-image: linear-gradient(to left, #161616, rgb(3, 3, 3));
+}
+
+.dark .projetos ul {
+    color: rgb(204, 204, 204);
+    text-shadow: rgb(179, 179, 179) 1px 1px 2px;
+}
+
+.dark .projetos li a{
+    color: rgb(204, 204, 204);
+}
+
+.dark .tema button {
+    background-image: url("https://i.postimg.cc/GtCkxYY7/sun02.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
